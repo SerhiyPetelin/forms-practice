@@ -25,8 +25,8 @@
                     <label for="email">Email
                         <input type="email" id="email" placeholder="Enter your Email" required>
                     </label>
-                    <label for="age">Age (optional)
-                        <input type="number" id="age" placeholder="Age">
+                    <label for="number">Age (optional)
+                        <input type="number" id="number" min="13" max="120" placeholder="Age">
                     </label>
                 </div>
                 <div class="optional-selection">
@@ -47,6 +47,14 @@
                     <label for="maybe">Maybe</label>
                     <input type="radio" name="recommend" id="not-sure" value="not-sure">
                     <label for="not-sure">Not sure</label>
+                    <label for="favorite-feature">What is your favorite feature of freeCodeCamp?
+                        <select name="favorite-feature" id="">
+                            <option value="">Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="open-source">Open Source</option>
+                        </select>
                 </div>
 
             </form>
