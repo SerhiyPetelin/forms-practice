@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your Email" required>
+            <label for="number">Age (optional)</label>
+            <input id="number" type="number" min="13" max="120" placeholder="Age">
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown">
+                <option value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learn">Full Time Learner</option>
+                <option value="secret">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="def">Definitely</label>
+            <input type="radio" class="inline" id="def" name="recommend" value="definitely">
+            <label for="maybe">Maybe</label>
+            <input type="radio" class="inline" id="maybe" name="recommend" value="maybe">
+            <label for="not-sure">Not sure</label>
+            <input type="radio" class="inline" id="not-sure" name="recommend" value="not-sure">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input type="checkbox" class="inline" id="frontend" value="frontend">
+            <label for="frontend">Front-end Projects</label>
+            <input type="checkbox"  class="inline" id="backend" value="beckend">
+            <label for="backend">Back-end Projects</label>
+            <input type="checkbox" class="inline" id="data-visualization" value="data-visualization">
+            <label for="data-visualization">Data Visualization</label>
+            <input type="checkbox" class="inline" id="challenges" value="challenges">
+            <label for="challenges">Challenges</label>
+            <input type="checkbox" class="inline" id="comunity" value="comunity">
+            <label for="comunity">Open Source Community</label>
+            <input type="checkbox" class="inline" id="help-rooms" value="help-rooms">
+            <label for="help-rooms">Gitter help rooms</label>
+            <input type="checkbox" class="inline" id="videos" value="videos">
+            <label for="videos">Videos</label>
+            <input type="checkbox" class="inline" id="meetups" value="meetups">
+            <label for="meetups">City Meetups</label>
+            <input type="checkbox" class="inline" id="wiki" value="wiki">
+            <label for="wiki">Wiki</label>
+            <input type="checkbox" class="inline" id="forum" value="forum">
+            <label for="forum">Forum</label>
+            <input type="checkbox" class="inline" id="courses" value="courses">
+            <label for="courses">Additional Courses</label>
+            <p>Any comments or suggestions?</p>
+            <textarea rows="5" cols="33" placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <input type="button" value="Add to favorites">
+    </form>
+</body>
+
+</html>
